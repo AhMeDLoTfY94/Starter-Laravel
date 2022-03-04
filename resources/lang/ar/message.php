@@ -13,6 +13,10 @@ return [
     |
     */
 
- "hello gus" => 'اهلا بكم'
+ "hello gus" => 'اهلا بكم',
+ "offer name required"=>"اسم العرض مطلوب",
+ "offer price required"=>'سعر العرض مطلوب',
+ 'offer name must be unique'=>'اسم العرض موجود',
+ "price must be number"=>'السعر يكون رقم ',
 
 ];

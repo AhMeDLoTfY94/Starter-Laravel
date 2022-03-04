@@ -26,6 +26,13 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
+                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                    <li>
+                        <a class="navbar-brand" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                            {{ $properties['native'] }}
+                        </a>
+                    </li>
+                @endforeach
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>

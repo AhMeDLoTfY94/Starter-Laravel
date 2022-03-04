@@ -13,6 +13,11 @@ return [
     |
     */
 
-    "hello gus" => 'hello'
+    "hello gus" => 'hello',
+    "offer name required"=> "offer name required",
+    "offer price required"=>"offer price required",
+    "offer name must be unique"=>"offer name must be unique",
+    "price must be number"=>"price must be number",
+
 
 ];
